@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#F5F5F5">
+
+    <ImageView
+        android:id="@+id/imageViewFoto"
+        android:layout_width="217dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/wagner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Mostrar Mensagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewFoto" />
+
+    <!-- Botão 2: Ocultar mensagem -->
+    <Button
+        android:id="@+id/btnOcultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ocultar Mensagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMostrar" />
+
+    <!-- Área da mensagem (começa oculta) -->
+    <TextView
+        android:id="@+id/txtMensagem"
+        android:layout_width="372dp"
+        android:layout_height="96dp"
+        android:background="#E0F7FA"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:padding="16dp"
+        android:text="Olá! Meu nome é Wagner Cesar Vieira. \n
+        Sou de Bebedouro e tenho 51 anos. \n
+        Prazer em conhecê-los!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOcultar" />
+
+    <!-- começa invisível -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
